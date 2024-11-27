@@ -24,9 +24,9 @@ public class Dictionary_Chapter21 {
     // フロー図のメソッド
     public String searchWord(String word) {
         if (dictionary.containsKey(word)) {
-            return dictionary.get(word); // 意味をそのまま返す
+            return word + "の意味は" + dictionary.get(word);
         } else {
-            return null; // 登録されていない場合は null を返す
+            return word + "は辞書に存在しません";
         }
     }
 }
