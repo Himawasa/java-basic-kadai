@@ -1,7 +1,6 @@
 package kadai_026;
 
 import java.util.HashMap;
-import java.util.Random;
 import java.util.Scanner;
 
 public class Jyanken_Chapter26 {
@@ -19,8 +18,8 @@ public class Jyanken_Chapter26 {
 
     // 対戦相手のじゃんけんの手をランダムで選ぶ
     public String getYourChoice() {
-        Random random = new Random();
-        int randomChoice = random.nextInt(3); // 0, 1, 2のいずれかを生成
+        double randomValue = Math.random() * 3; // 0.0以上3.0未満の乱数を生成
+        int randomChoice = (int) Math.floor(randomValue); // 小数点以下を切り捨てて0, 1, 2を生成
 
         String choice;
         switch (randomChoice) {

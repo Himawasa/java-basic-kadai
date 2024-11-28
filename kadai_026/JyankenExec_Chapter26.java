@@ -5,7 +5,7 @@ public class JyankenExec_Chapter26 {
         // じゃんけんクラスのインスタンスを作成
         Jyanken_Chapter26 jyanken = new Jyanken_Chapter26();
 
-        // じゃんけんをプレイ
+        // じゃんけん
         jyanken.playGame();
     }
 }
